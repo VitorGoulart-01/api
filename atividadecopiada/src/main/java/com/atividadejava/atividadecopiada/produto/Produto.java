@@ -3,14 +3,25 @@ package com.atividadejava.atividadecopiada.produto;
 public class Produto {
     private String nome;
     private double preco;
+    private String descricao;
 
     public Produto(){
 
     }
 
-    public Produto(String nome, double preco){
+    public Produto(String nome, double preco, String descricao){
         this.nome = nome;
         this.preco = preco;
+        this.descricao = descricao;
+        
+
+    }
+    public String getDescricao(){
+        return descricao;
+
+    }
+    public void setDescricao(String descricao){
+        this.descricao = descricao;
 
     }
 
@@ -32,7 +43,8 @@ public class Produto {
     public String toString(){
         return "Produto{" +
         "nome='" + nome + '\'' + 
-        ", preco=" + preco + 
+        ", preco=" + preco + '\'' +
+        "descricao=" + descricao + '\'' +
         '}';
 
     }

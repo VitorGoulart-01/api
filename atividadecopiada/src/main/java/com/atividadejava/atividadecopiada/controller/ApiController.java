@@ -38,7 +38,7 @@ public class ApiController {
 
     @GetMapping("/cliente")
     public Cliente obterCliente(){
-        return new Cliente("João Silva", 28, "joao@email.com");
+        return new Cliente("João Silva", 28, "joao@email.com", 61.24132591);
 
     }
 
@@ -46,23 +46,23 @@ public class ApiController {
     public List<Cliente> obterClientes(){
         
         List<Cliente> clientes = new ArrayList<>();
-        clientes.add(new Cliente("Joao Silva", 28, "joao@email.com"));
-        clientes.add(new Cliente("Maria Santos", 35, "maria@email.com"));
-        clientes.add(new Cliente("Pedro Oliveira", 42, "pedro@email.com"));
-        clientes.add(new Cliente("Ana Costa", 31, "ana@email.com"));
-        clientes.add(new Cliente("Carlos Mendes", 25, "carlos@email.com"));
-        clientes.add(new Cliente("Juliana Pereira", 38, "juliana@email.com"));
-        clientes.add(new Cliente("Roberto Ferreira", 55, "roberto@email.com"));
-        clientes.add(new Cliente("Fernanda Lima", 29, "fernanda@email.com"));
-        clientes.add(new Cliente("Lucas Rocha", 23, "lucas@email.com"));
-        clientes.add(new Cliente("Patricia Gomes", 44, "patricia@email.com"));
+        clientes.add(new Cliente("Joao Silva", 28, "joao@email.com", 61.22389803));
+        clientes.add(new Cliente("Maria Santos", 35, "maria@email.com", 61.23233650));
+        clientes.add(new Cliente("Pedro Oliveira", 42, "pedro@email.com", 61.33557921));
+        clientes.add(new Cliente("Ana Costa", 31, "ana@email.com", 61.34442668 ));
+        clientes.add(new Cliente("Carlos Mendes", 25, "carlos@email.com", 61.37071926));
+        clientes.add(new Cliente("Juliana Pereira", 38, "juliana@email.com", 61.20985552));
+        clientes.add(new Cliente("Roberto Ferreira", 55, "roberto@email.com",61.20985552));
+        clientes.add(new Cliente("Fernanda Lima", 29, "fernanda@email.com", 61.33344216));
+        clientes.add(new Cliente("Lucas Rocha", 23, "lucas@email.com", 61.33344216));
+        clientes.add(new Cliente("Patricia Gomes", 44, "patricia@email.com", 61.33344216));
         return clientes;
 
     }
 
     @GetMapping("/produto")
     public Produto obterProduto(){
-        return new Produto("notebook DEll", 3500.00);
+        return new Produto("notebook DEll", 3500.00,"Descriçao: otima qualidade");
 
     }
 
@@ -70,30 +70,30 @@ public class ApiController {
     public List<Produto> obterProdutos(){
         List<Produto> produtos = new ArrayList<>();
 
-         produtos.add(new Produto("Notebook Dell Inspiron 15", 3500.00));
-        produtos.add(new Produto("Notebook Lenovo IdeaPad", 2800.00));
-        produtos.add(new Produto("Notebook HP Pavilion", 3200.00));
-        produtos.add(new Produto("Notebook ASUS VivoBook", 2600.00));
+         produtos.add(new Produto("Notebook Dell Inspiron 15", 3500.00, "Descriçao: otima qualidade" ));
+        produtos.add(new Produto("Notebook Lenovo IdeaPad", 2800.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Notebook HP Pavilion", 3200.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Notebook ASUS VivoBook", 2600.00,"Descriçao: otima qualidade"));
 
-        produtos.add(new Produto("Mouse Logitech MX Master", 350.00));
-        produtos.add(new Produto("Mouse Razer DeathAdder", 280.00));
-        produtos.add(new Produto("Teclado Mecânico RGB", 450.00));
-        produtos.add(new Produto("Teclado Bluetooth Wireless", 180.00));
+        produtos.add(new Produto("Mouse Logitech MX Master", 350.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Mouse Razer DeathAdder", 280.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Teclado Mecânico RGB", 450.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Teclado Bluetooth Wireless", 180.00,"Descriçao: otima qualidade"));
 
-        produtos.add(new Produto("Monitor LG 24 polegadas", 900.00));
-        produtos.add(new Produto("Monitor Dell 27 polegadas 144Hz", 1400.00));
-        produtos.add(new Produto("Monitor Samsung 32 polegadas 4K", 2200.00));
-        produtos.add(new Produto("Monitor ASUS Curvo 34\"", 2800.00));
+        produtos.add(new Produto("Monitor LG 24 polegadas", 900.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Monitor Dell 27 polegadas 144Hz", 1400.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Monitor Samsung 32 polegadas 4K", 2200.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Monitor ASUS Curvo 34\"", 2800.00,"Descriçao: otima qualidade"));
 
-        produtos.add(new Produto("Webcam Logitech C920", 380.00));
-        produtos.add(new Produto("Headset HyperX Cloud Flight", 650.00));
-        produtos.add(new Produto("Microfone Blue Yeti", 520.00));
-        produtos.add(new Produto("Alto-falante JBL Bluetooth", 250.00));
+        produtos.add(new Produto("Webcam Logitech C920", 380.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Headset HyperX Cloud Flight", 650.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Microfone Blue Yeti", 520.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Alto-falante JBL Bluetooth", 250.00,"Descriçao: otima qualidade"));
 
-        produtos.add(new Produto("Mousepad XL Gamer", 120.00));
-        produtos.add(new Produto("Hub USB-C 7 em 1", 280.00));
-        produtos.add(new Produto("Webcam anel de luz LED", 180.00));
-        produtos.add(new Produto("Suporte para notebook", 90.00));
+        produtos.add(new Produto("Mousepad XL Gamer", 120.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Hub USB-C 7 em 1", 280.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Webcam anel de luz LED", 180.00,"Descriçao: otima qualidade"));
+        produtos.add(new Produto("Suporte para notebook", 90.00,"Descriçao: otima qualidade"));
 
                 return produtos;
 
